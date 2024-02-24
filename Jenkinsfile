@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy to tomcat(DeployBuild)') {
             steps {
-                sh "sudo scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/deploy/webapp/target/webapp.war root@ 100.25.129.172:/root/apache-tomcat-9.0.86/webapps"
+                sh "sudo scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/tom/webapp/target/webapp.war root@ 100.25.129.172:/root/apache-tomcat-9.0.86/webapps"
             }
         }
     }
